@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkstories_of_the_drunken_sailor=self.webpackChunkstories_of_the_drunken_sailor||[]).push([[691],{7200:function(e,t,n){n.r(t),n.d(t,{Head:function(){return r}});var l=n(7294);t.default=()=>l.createElement("main",null,l.createElement("h1",null,"Hi There"),l.createElement("article",null,"Here Ill be posting ideas and practical suggestions."));const r=()=>l.createElement("title",null,"Whats up? The sky")}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-30c466e99445b9271566.js.map
