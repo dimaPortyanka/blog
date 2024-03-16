@@ -1,17 +1,19 @@
-import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import * as React from 'react'
+import type {
+    HeadFC, PageProps, 
+} from 'gatsby'
+
+import CV from 'src/components/CV'
+import Layout from 'src/components/Layout'
 
 const IndexPage: React.FC<PageProps> = () => {
-  return (
-    <main>
-      <h1>Hi There</h1>
-      <article>
-        Here Ill be posting ideas and practical suggestions.
-      </article>
-    </main>
-  )
+    return (
+        <Layout noDisclaimer>
+            <CV />
+        </Layout>
+    )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Whats up? The sky</title>
+export const Head: HeadFC = () => <title>Dmytro Portianka - CV</title>
