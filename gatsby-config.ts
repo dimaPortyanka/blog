@@ -1,9 +1,11 @@
-import type { GatsbyConfig } from 'gatsby'
+import type {
+    GatsbyConfig, 
+} from 'gatsby'
 
 const config: GatsbyConfig = {
     siteMetadata: {
         title: 'Stories of the drunken sailor',
-        siteUrl: 'https://www.yourdomain.tld'
+        siteUrl: 'https://www.dmytro-portianka.xyz',
     },
     graphqlTypegen: true,
     plugins: [
@@ -25,7 +27,7 @@ const config: GatsbyConfig = {
                 portalZIndex: undefined,
             },
         },
-    ]
+    ], 
 }
 
 export default config

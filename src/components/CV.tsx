@@ -65,7 +65,8 @@ const CV: React.FC = () => {
                 Work experience
             </Heading>
             <Accordion
-                allowMultiple allowToggle defaultIndex={0}
+                allowMultiple 
+                allowToggle
             >
                 <AccordionItem>
                     <AccordionButton 
