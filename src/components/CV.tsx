@@ -67,6 +67,11 @@ const CV: React.FC = () => {
             <Accordion
                 allowMultiple 
                 allowToggle
+                defaultIndex={[
+                    0,
+                    1,
+                    2,
+                ]}
             >
                 <AccordionItem>
                     <AccordionButton 
