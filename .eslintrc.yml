@@ -29,11 +29,18 @@ rules:
   object-curly-newline:
     - error
     - always
+  react/jsx-first-prop-new-line:
+    - error
+    - always
+  react/jsx-closing-bracket-location:
+    - error
+    - tag-aligned
   react/jsx-sort-props:
     - error
     - callbacksLast: true
       shorthandFirst: true
       reservedFirst: true
+      noSortAlphabetically: false
   sort-imports:
     - error
     - ignoreDeclarationSort: false

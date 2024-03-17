@@ -17,7 +17,9 @@ const Layout: React.FC<LayoutProps> = ({
     noDisclaimer = false,
 },) => {
     return (
-        <VStack bg="Background" minH="100vh">
+        <VStack
+            bg="Background" minH="100vh"
+        >
             <Box
                 bg="InfoBackground"
                 py={2}
@@ -25,12 +27,16 @@ const Layout: React.FC<LayoutProps> = ({
                 width="100%"
             >
                 {!noDisclaimer && (
-                    <Container maxW="2xl">
+                    <Container
+                        maxW="2xl"
+                    >
                         <Intro />
                     </Container>
                 )}
             </Box>
-            <Container maxW="2xl">
+            <Container
+                maxW="2xl"
+            >
                 {children}
             </Container>
         </VStack>

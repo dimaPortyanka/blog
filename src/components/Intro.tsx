@@ -12,18 +12,26 @@ import {
 
 const Intro: React.FC = () => {
     return (
-        <Accordion allowToggle>
+        <Accordion
+            allowToggle
+        >
             <AccordionItem>
                 <h2>
                     <AccordionButton>
-                        <Box as="span" flex='1' textAlign='left'>
+                        <Box
+                            as="span" flex='1' textAlign='left'
+                        >
                             Who I am?
                         </Box>
                         <AccordionIcon />
                     </AccordionButton>
                 </h2>
-                <AccordionPanel pb={4}>
-                    <Heading size="lg">
+                <AccordionPanel
+                    pb={4}
+                >
+                    <Heading
+                        size="lg"
+                    >
                         Hey there!
                     </Heading>
                     <Text>

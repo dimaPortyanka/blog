@@ -8,7 +8,9 @@ import Layout from 'src/components/Layout'
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
-        <Layout noDisclaimer>
+        <Layout
+            noDisclaimer
+        >
             <CV />
         </Layout>
     )
