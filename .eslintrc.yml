@@ -13,12 +13,16 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
   - react
+  - '@stylistic/js'
 settings:
   import/resolver:
     typescript: true
   react:
     version: 'detect'
 rules:
+  '@stylistic/js/max-len':
+    - error
+    - code: 100
   comma-dangle:
     - error
     - always
