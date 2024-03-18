@@ -16,6 +16,7 @@ import {
 import {
     CalendarIcon, 
     EmailIcon, 
+    
 } from '@chakra-ui/icons'
 
 const CV: React.FC = () => {
@@ -56,6 +57,12 @@ const CV: React.FC = () => {
                             margin="2"
                         />
                         schedule 1 on 1
+                    </Link>
+                    or
+                    <Link
+                        href="https://github.com/dimaPortyanka"
+                    >
+                        github
                     </Link>
                 </Flex>
             </Box>
