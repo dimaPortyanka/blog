@@ -16,8 +16,9 @@ import {
 import {
     CalendarIcon, 
     EmailIcon, 
-    
 } from '@chakra-ui/icons'
+
+import workExperience from './workExperience'
 
 const CV: React.FC = () => {
     return (
@@ -80,68 +81,47 @@ const CV: React.FC = () => {
                     2,
                 ]}
             >
-                <AccordionItem>
-                    <AccordionButton 
-                        display="flex"
-                    >
-                        KAYAK
-                        <Spacer />
-                        <AccordionIcon />
-                    </AccordionButton>
-                    <AccordionPanel>
-                        Description what ive done in kayak
-                    </AccordionPanel>
-                </AccordionItem>
-                <AccordionItem>
-                    <AccordionButton>
-                        Capabuild
-                        <Spacer />
-                        <AccordionIcon />
-                    </AccordionButton>
-                    <AccordionPanel>
-                        A bit of experience about working in Capabuild
-                    </AccordionPanel>
-                </AccordionItem>
-                <AccordionItem>
-                    <AccordionButton>
-                        SkyCell AG
-                        <Spacer />
-                        <AccordionIcon />
-                    </AccordionButton>
-                    <AccordionPanel>
-                        A bit of experience about working in SkyCell AG
-                    </AccordionPanel>
-                </AccordionItem>
-                <AccordionItem>
-                    <AccordionButton>
-                        Ciklum
-                        <Spacer />
-                        <AccordionIcon />
-                    </AccordionButton>
-                    <AccordionPanel>
-                        A bit of experience about working in Ciklum
-                    </AccordionPanel>
-                </AccordionItem>
-                <AccordionItem>
-                    <AccordionButton>
-                        Innovecs
-                        <Spacer />
-                        <AccordionIcon />
-                    </AccordionButton>
-                    <AccordionPanel>
-                        A bit of experience about working in Innovecs
-                    </AccordionPanel>
-                </AccordionItem>
-                <AccordionItem>
-                    <AccordionButton>
-                        DataArt
-                        <Spacer />
-                        <AccordionIcon />
-                    </AccordionButton>
-                    <AccordionPanel>
-                        A bit of experience about working in Dataart
-                    </AccordionPanel>
-                </AccordionItem>
+                {
+                    workExperience.map(({
+                        location,
+                        company,
+                        start,
+                        end,
+                        role,
+                        achievements,
+                    },) => {
+                        return (
+                            <AccordionItem
+                                key={`${company}-${start}-${end}`}
+                            >
+                                <AccordionButton 
+                                    display="flex"
+                                    gap="5"
+                                    justifyContent="space-between"
+                                >
+                                    <div>
+                                        {start}
+                                        <br />
+                                        {end}
+                                    </div>
+                                    <div>
+                                        {role}
+                                    </div>
+                                    <div>
+                                        {company}
+                                        <br />
+                                        {location}
+                                    </div>
+                                    <Spacer />
+                                    <AccordionIcon />
+                                </AccordionButton>
+                                <AccordionPanel>
+                                    {achievements}
+                                </AccordionPanel>
+                            </AccordionItem>
+                        )
+                    },)
+                }
             </Accordion>
         </Stack>
     )
