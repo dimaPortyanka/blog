@@ -10,8 +10,10 @@ import {
     Flex, 
     Heading, 
     Link,
+    ListItem,
     Spacer, 
     Stack,
+    UnorderedList,
 } from '@chakra-ui/react'
 import {
     CalendarIcon, 
@@ -51,8 +53,8 @@ const CV: React.FC = () => {
                     </Link>
                     or
                     <Link
-                        href="https://calendly.com/portyanka-d/15min" 
-                        isExternal={true}
+                        isExternal 
+                        href="https://calendly.com/portyanka-d/15min"
                     >
                         <CalendarIcon
                             margin="2"
@@ -61,6 +63,7 @@ const CV: React.FC = () => {
                     </Link>
                     or
                     <Link
+                        isExternal
                         href="https://github.com/dimaPortyanka"
                     >
                         github
@@ -96,27 +99,46 @@ const CV: React.FC = () => {
                             >
                                 <AccordionButton 
                                     display="flex"
-                                    gap="5"
-                                    justifyContent="space-between"
+                                    gap="10"
                                 >
-                                    <div>
-                                        {start}
-                                        <br />
-                                        {end}
-                                    </div>
-                                    <div>
-                                        {role}
-                                    </div>
-                                    <div>
-                                        {company}
-                                        <br />
-                                        {location}
-                                    </div>
+                                    <Box
+                                        display="flex"
+                                        gap="5"
+                                        justifyContent="space-between"
+                                        width="100%"
+                                    >
+                                        <div>
+                                            {end}
+                                            <br />
+                                            {start}
+                                        </div>
+                                        <div>
+                                            {role}
+                                        </div>
+                                        <div>
+                                            {company}
+                                            <br />
+                                            {location}
+                                        </div>
+                                    </Box>
                                     <Spacer />
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel>
-                                    {achievements}
+                                    <UnorderedList>
+                                        {achievements.map((
+                                            achievement,
+                                            index,
+                                        ) => {
+                                            return (
+                                                <ListItem
+                                                    key={`achievement-${index}`}
+                                                >
+                                                    {achievement}
+                                                </ListItem>
+                                            )
+                                        },)}
+                                    </UnorderedList>
                                 </AccordionPanel>
                             </AccordionItem>
                         )

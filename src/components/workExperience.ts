@@ -4,49 +4,60 @@ const workExperience: {
   role: string;
   location: string;
   company: string;
-  achievements: string;
+  achievements: string[];
 }[] = [{
     start: '12 Sep 2022',
     end: 'now',
     role: 'Senior Software Engineer',
     location: 'Cambridge, MA, USA',
     company: 'KAYAK',
-    achievements: '',
+    achievements: [
+        `Designed and implemented a tool to improve 
+        dev speed and code quality in unit tests creation.`,
+        `Implemented user facing features and e2e 
+        tests to ensure stable work of the application`,
+        `Designed and implemented a centralized
+        notification system for users.`,
+        `Increased code quality in a team by 
+        constantly making code reviews and sharing best pratices`,
+        `Made a knowledge sharing session on 
+        how to write effective e2e tests.`,
+    ],
 },{
     start: '6 Jun 2022',
     end: '9 Sep 2022',
     role: 'Founding Software Engineer',
     location: 'Remote, USA',
     company: 'Capabuild',
-    achievements: '',
+    achievements: [],
 },{
     start: '12 Oct 2019',
     end: '20 Apr 2022',
     role: 'Senior Software Engineer, Tech Lead Front-end',
     location: 'Zurich, Switzerland',
     company: 'SkyCell AG',
-    achievements: '',
+    achievements: [],
 },{
     start: '15 Jan 2018',
     end: '20 Aug 2019',
     role: 'Senior Software Engineer',
     location: 'Kyiv, Ukraine',
     company: 'Ciklum',
-    achievements: '',
+    achievements: [],
 },{
     start: '20 Apr 2017',
     end: '29 Dec 2017',
     role: 'Senior Software Engineer',
     location: 'Kyiv, Ukraine',
     company: 'Innovecs',
-    achievements: '',
+    achievements: [],
 },{
     start: '15 Feb 2016',
     end: '15 Apr 2017',
     role: 'Software Engineer',
     location: 'Dnipro, Ukraine',
     company: 'Dataart',
-    achievements: '',
+    achievements: [],
 },]
 
 export default workExperience
