@@ -107,19 +107,23 @@ const CV: React.FC = () => {
                                         justifyContent="space-between"
                                         width="100%"
                                     >
-                                        <div>
+                                        <Box
+                                            textAlign="start"
+                                        >
                                             {end}
                                             <br />
                                             {start}
-                                        </div>
+                                        </Box>
                                         <div>
                                             {role}
                                         </div>
-                                        <div>
+                                        <Box
+                                            textAlign="end"
+                                        >
                                             {company}
                                             <br />
                                             {location}
-                                        </div>
+                                        </Box>
                                     </Box>
                                     <Spacer />
                                     <AccordionIcon />
