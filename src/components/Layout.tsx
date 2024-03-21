@@ -28,14 +28,14 @@ const Layout: React.FC<LayoutProps> = ({
             >
                 {!noDisclaimer && (
                     <Container
-                        maxW="2xl"
+                        maxW="4xl"
                     >
                         <Intro />
                     </Container>
                 )}
             </Box>
             <Container
-                maxW="2xl"
+                maxW="4xl"
             >
                 {children}
             </Container>
