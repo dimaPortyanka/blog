@@ -1,10 +1,11 @@
 import {
     Box, 
-    Center, 
-    Flex,
-    Heading, 
+    Center,
+    Flex, 
+    Heading,
     Link, 
     Stack, 
+    Text, 
 } from '@chakra-ui/react'
 import {
     CalendarIcon, 
@@ -65,6 +66,16 @@ const CV: React.FC = () => {
                 </Flex>
             </Box>
             <WorkExperienceSection />
+            <Box>
+                <Heading
+                    size="m"
+                >
+                    Education:
+                </Heading>
+                <Text>
+                    Dnipropetrovsk State University, Computer science, Master Degree, 2011-2016
+                </Text>
+            </Box>
         </Stack>
     )
 }
