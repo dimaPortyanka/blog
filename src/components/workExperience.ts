@@ -29,28 +29,51 @@ const workExperience: {
     role: 'Founding Software Engineer',
     location: 'Remote, USA',
     company: 'Capabuild',
-    achievements: [],
+    achievements: [
+        'Setup initial front-end structure',
+        'Pitched and implemented base of initial front-end tech stack',
+        'Helped with hiring new front-end devs',
+    ],
 },{
     start: '12 Oct 2019',
     end: '20 Apr 2022',
     role: 'Senior Software Engineer, Tech Lead Front-end',
     location: 'Zurich, Switzerland',
     company: 'SkyCell AG',
-    achievements: [],
+    achievements: [
+        '4 times increased productivity of the team by designing and framework to generate forms.',
+        `Developed VScode plugin to create components faster by 
+        encapsulating base component structure in configurable templates`,
+        `Decreased amount of frontend api requests by 80% and decreased server load by
+        95% by designing and implementing GraphQL server that allowed to manage
+        business entities in different states.`,
+        'Onboarded new teammates and built an effective front-end team.',
+    ],
 },{
     start: '15 Jan 2018',
     end: '20 Aug 2019',
     role: 'Senior Software Engineer',
     location: 'Kyiv, Ukraine',
     company: 'Ciklum',
-    achievements: [],
+    achievements: [
+        `Increased code coverage of application from 20 to 95 percent by providing simple
+        in usage solution for testing, setup ci to make it transparent and informative, made
+        a workshop on how to write tests and guided my teammates.`,
+        `Decreased by 80% of unhandled errors by creating a framework 
+        to handle errors automatically.`,
+    ],
 },{
     start: '20 Apr 2017',
     end: '29 Dec 2017',
     role: 'Senior Software Engineer',
     location: 'Kyiv, Ukraine',
     company: 'Innovecs',
-    achievements: [],
+    achievements: [
+        'Setup frontend application from scratch and built a frontend team',
+        'Established code rules, guidelines and onboarded teammates.',
+        `Build a team with process and abilities to meet strict 
+        deadlines and deliver high quality solutions at a high pace.`,
+    ],
 },{
     start: '15 Feb 2016',
     end: '15 Apr 2017',

@@ -88,15 +88,21 @@ const WorkExperienceSection = () => {
                                     </AccordionButton>
                                     <AccordionPanel
                                         display="flex"
+                                        flexDir={{
+                                            base: 'column',
+                                            md: 'row',
+                                        }}
                                     >
                                         {itemIsExpanded && (
                                             <Text
                                                 as="b"
                                                 textAlign="start"
                                             >
-                                                {end}
-                                                <br />
                                                 {start}
+                                                {' '}
+                                                -
+                                                {' '}
+                                                {end}
                                             </Text>
                                         )}
                                         <UnorderedList>
