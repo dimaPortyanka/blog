@@ -80,7 +80,13 @@ const workExperience: {
     role: 'Software Engineer',
     location: 'Dnipro, Ukraine',
     company: 'Dataart',
-    achievements: [],
+    achievements: [
+        `Improved way of handling API calls, defined a way to use redux-saga, 
+        and held a workshop for teammates`,
+        `Fixed problems with performance to render vast amounts of
+        data.`,
+        'Onboarding and mentoring junior developers.',
+    ],
 },]
 
 export default workExperience

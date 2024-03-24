@@ -72,7 +72,14 @@ const WorkExperienceSection = () => {
                                             <Text
                                                 as={itemIsExpanded ? 'b': 'samp'}
                                             >
-                                                {role}
+                                                {role.split(',',).map((rolePart,) => {
+                                                    return (
+                                                        <>
+                                                            {rolePart}
+                                                            <br />
+                                                        </>
+                                                    )
+                                                },)}
                                             </Text>
                                             <Text
                                                 as={itemIsExpanded ? 'b': 'samp'}
