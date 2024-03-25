@@ -72,11 +72,11 @@ const WorkExperienceSection = () => {
                                             <Text
                                                 as={itemIsExpanded ? 'b': 'samp'}
                                             >
-                                                {role.split(',',).map((rolePart,) => {
+                                                {role.split(',',).map((rolePart, index, arr,) => {
                                                     return (
                                                         <>
                                                             {rolePart}
-                                                            <br />
+                                                            {index < arr.length - 1 && <br />}
                                                         </>
                                                     )
                                                 },)}
@@ -101,16 +101,34 @@ const WorkExperienceSection = () => {
                                         }}
                                     >
                                         {itemIsExpanded && (
-                                            <Text
-                                                as="b"
-                                                textAlign="start"
-                                            >
-                                                {start}
-                                                {' '}
+                                            <>
+                                                <Text
+                                                    as="b"
+                                                    display={{
+                                                        sm: 'none',
+                                                    }}
+                                                    textAlign="start"
+                                                >
+                                                    {start}
+                                                    {' '}
                                                 -
-                                                {' '}
-                                                {end}
-                                            </Text>
+                                                    {' '}
+                                                    {end}
+                                                </Text>
+                                                <Text
+                                                    as="b"
+                                                    display={{
+                                                        base: 'none',
+                                                        sm: 'block',
+                                                    }}
+                                                    minW="6em"
+                                                    textAlign="start"
+                                                >
+                                                    {end}
+                                                    <br />
+                                                    {start}
+                                                </Text>
+                                            </>
                                         )}
                                         <UnorderedList>
                                             {achievements.map((

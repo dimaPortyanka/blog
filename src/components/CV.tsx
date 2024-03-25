@@ -65,6 +65,21 @@ const CV: React.FC = () => {
                     </Link>
                 </Flex>
             </Box>
+            <Box>
+                <Heading
+                    size="m"
+                >
+                        Short summary
+                </Heading>
+                <Text>
+                    Software engineer with 8+ years of experience 
+                    with deep knowledge of Front-end ecosystem,
+                    but also skilled in Back-end and able to deliver feature
+                    from idea to implemention and maintainance.
+                    Higly skilled in clean code practices, testing(unit and e2e). 
+                    Has success stories in team leadership and mentoring colleagues.
+                </Text>
+            </Box>
             <WorkExperienceSection />
             <Box>
                 <Heading
