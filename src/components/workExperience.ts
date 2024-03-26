@@ -12,15 +12,15 @@ const workExperience: {
     location: 'Cambridge, MA, USA',
     company: 'KAYAK',
     achievements: [
-        `Designed and implemented a tool to improve 
-        dev speed and code quality in unit tests creation.`,
-        `Implemented user facing features and e2e 
-        tests to ensure stable work of the application`,
+        `Designed and implemented a tool to improve
+        dev speed and code quality in unit test creation.`,
+        `Implemented user-facing features and e2e
+        tests to ensure the stable work of the application.`,
         `Designed and implemented a centralized
         notification system for users.`,
         `Increased code quality in a team by 
-        constantly making code reviews and sharing best pratices`,
-        `Made a knowledge sharing session on 
+        constantly making code reviews and sharing best practices.`,
+        `Made a knowledge-sharing session on
         how to write effective e2e tests.`,
     ],
 },{

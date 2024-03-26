@@ -32,7 +32,7 @@ const CV: React.FC = () => {
                 <Heading
                     size="m"
                 >
-                    Contact me with:
+                    Contact me:
                 </Heading>
                 <Flex
                     gap={5}
@@ -69,14 +69,14 @@ const CV: React.FC = () => {
                 <Heading
                     size="m"
                 >
-                        Short summary
+                        Short summary:
                 </Heading>
                 <Text>
-                    Software engineer with 8+ years of experience 
-                    with deep knowledge of Front-end ecosystem,
-                    but also skilled in Back-end and able to deliver feature
-                    from idea to implemention and maintainance.
-                    Higly skilled in clean code practices, testing(unit and e2e). 
+                    Software engineer with 8+ years of experience
+                    with deep knowledge of Front-end ecosystem, 
+                    and also skilled in Back-end and able to deliver features
+                    from idea to implementation and maintenance. 
+                    Highly skilled in clean code practices, and testing(unit and e2e). 
                     Has success stories in team leadership and mentoring colleagues.
                 </Text>
             </Box>
