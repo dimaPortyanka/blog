@@ -1,0 +1,61 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/typescript
+  - plugin:react/recommended
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+  - react
+  - '@stylistic/js'
+settings:
+  import/resolver:
+    typescript: true
+  react:
+    version: 'detect'
+rules:
+  '@stylistic/js/max-len':
+    - error
+    - code: 100
+  comma-dangle:
+    - error
+    - always
+  object-curly-newline:
+    - error
+    - always
+  react/jsx-first-prop-new-line:
+    - error
+    - always
+  react/jsx-closing-bracket-location:
+    - error
+    - tag-aligned
+  react/jsx-sort-props:
+    - error
+    - callbacksLast: true
+      shorthandFirst: true
+      reservedFirst: true
+      noSortAlphabetically: false
+  sort-imports:
+    - error
+    - ignoreDeclarationSort: true
+      allowSeparatedGroups: true
+  react/no-unescaped-entities:
+    - off
+  indent:
+    - error
+    - 4
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
