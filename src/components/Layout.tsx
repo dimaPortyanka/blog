@@ -18,7 +18,8 @@ const Layout: React.FC<LayoutProps> = ({
 },) => {
     return (
         <VStack
-            bg="Background" minH="100vh"
+            bg="Background" 
+            minH="100vh"
         >
             <Box
                 bg="InfoBackground"

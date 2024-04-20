@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
                         <Box
                             as="span" flex='1' textAlign='left'
                         >
-                            Who I am?
+                            About author
                         </Box>
                         <AccordionIcon />
                     </AccordionButton>

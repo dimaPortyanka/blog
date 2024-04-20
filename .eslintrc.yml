@@ -23,7 +23,7 @@ rules:
   '@stylistic/js/max-len':
     - error
     - code: 100
-  comma-dangle:
+  '@stylistic/js/comma-dangle':
     - error
     - always
   object-curly-newline:
