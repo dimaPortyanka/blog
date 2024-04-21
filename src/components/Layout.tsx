@@ -3,6 +3,7 @@ import {
     Box,
     Button,
     Container,
+    Divider,
     HStack,
     Input,
     Text,
@@ -37,11 +38,7 @@ const Layout: React.FC<LayoutProps> = ({
                 width="100%"
             >
                 {!noDisclaimer && (
-                    <Container
-                        maxW="4xl"
-                    >
-                        <Intro />
-                    </Container>
+                    <Intro />
                 )}
             </Box>
             <Container
@@ -50,33 +47,36 @@ const Layout: React.FC<LayoutProps> = ({
                 {children}
             </Container>
             {!noSubscribe && (
-                <Container
-                    paddingY={10}
-                >
-                    <form
-                        action={ENDPOINT_URL} 
-                        method="post" 
-                        name="mc-embedded-subscribe-form" 
-                        target="_blank"
+                <>
+                    <Divider />
+                    <Container
+                        paddingY={10}
                     >
-                        <Text>
+                        <form
+                            action={ENDPOINT_URL} 
+                            method="post" 
+                            name="mc-embedded-subscribe-form" 
+                            target="_blank"
+                        >
+                            <Text>
                         If you found it interesting, subscribe to my following posts.
-                        </Text>
-                        <HStack>
-                            <Input
-                                required 
-                                name="EMAIL" 
-                                type="email"
-                            />
-                            <Button
-                                name="subscribe"
-                                type="submit"
-                            >
+                            </Text>
+                            <HStack>
+                                <Input
+                                    required 
+                                    name="EMAIL" 
+                                    type="email"
+                                />
+                                <Button
+                                    name="subscribe"
+                                    type="submit"
+                                >
                             Subscribe
-                            </Button>
-                        </HStack>
-                    </form>
-                </Container>
+                                </Button>
+                            </HStack>
+                        </form>
+                    </Container>
+                </>
             )}
         </VStack>
     )

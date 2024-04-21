@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {
     Heading,
-    Text, 
 } from '@chakra-ui/react'
 import {
     Link, PageProps, 
@@ -23,8 +22,6 @@ const Linter: React.FC<PageProps> = ({
             >
                 Part 1: Linter
             </Link>
-            <Text>
-            </Text>
         </Layout>
     )
 }
