@@ -254,7 +254,7 @@ const SetupLinter: React.FC<PageProps> = () => {
                     />
                 </CodeSection>
                 <Heading>
-                    Final and most interesting
+                    Example of rules that I like and why I think they make sense
                 </Heading>
                 <CodeSection>
                     <CodeLine>
@@ -269,22 +269,97 @@ const SetupLinter: React.FC<PageProps> = () => {
                     I want to share with you my opinion what rules i like to set:
                 </Text>
                 <CodeSection>
-                            '@stylistic/js/max-len':
-                                - error
-                                - code: 100
+                    <CodeBlock
+                        key="long-line-rule"
+                        lines={[
+                            [0, '\'@stylistic/js/max-len\':',],
+                            [1, '- error',],
+                            [1, '- code: 100',],
+                        ]}
+                    />
                 </CodeSection>
                 <Text>
                     Long lines just hard to read, so make it better for everyone.
                 </Text>
                 <CodeSection>
-                  '@stylistic/js/comma-dangle':
-                    - error
-                    - always
+                    <CodeBlock
+                        key="comma-dangle"
+                        lines={[
+                            [0, '\'@stylistic/js/comma-dangle\':',],
+                            [1, '- error',],
+                            [1, '- always',],
+                        ]}
+                    />
                 </CodeSection>
                 <Text>
-                    Long lines just hard to read, so make it better for everyone.
+                </Text>
+                <CodeSection>
+                    <CodeBlock
+                        key="new-line-rules"
+                        lines={[
+                            [0, '\'@stylistic/js/comma-dangle\':',],
+                            [1, '- error',],
+                            [1, '- always',],
+                            [0, 'object-curly-newline:',],
+                            [1, '- error',],
+                            [1, '- always',],
+                            [0, 'react/jsx-closing-bracket-location:',],
+                            [1, '- error',],
+                            [1, '- tag-aligned',],
+                            [0, 'react/jsx-first-prop-new-line:',],
+                            [1, '- error',],
+                            [1, '- always',],
+                        ]}
+                    />
+                </CodeSection>
+                <Text>
+                    Why I like comma dangle? This makes your git diff smaller.
+                    Because comma is already in the end in combination with each 
+                    element on a new line, it will have only addition in your git diff.
+                    This makes working with codebase more productive, small git diffs,
+                    less chance of merge conflicts.
+                </Text>
+                <CodeSection>
+                    <CodeBlock
+                        key="sorting-props-rule"
+                        lines={[
+                            [0, 'react/jsx-sort-props:',],
+                            [1, '- error',],
+                            [1, '- callbacksLast: true',],
+                            [2, 'shorthandFirst: true',],
+                            [2, 'reservedFirst: true',],
+                            [2, 'noSortAlphabetically: false',],
+                            [0, 'sort-imports:',],
+                            [1, '- error',],
+                            [1, '- ignoreDeclarationSort: true',],
+                        ]}
+                    />
+                </CodeSection>
+                <Text>
+                    Sorting of imports/props solves even more merge
+                    conflict pron scenario. With this rule whatever
+                    changes happens specific imports will be always
+                    on certain place. Also this eliminate posibility
+                    that smb will sort in theier pr props in a different
+                    way. So it saves time for whole team and follows
+                    the practice only relevant changes in pr.
                 </Text>
             </VStack>
+            <Heading>
+                Summary
+            </Heading>
+            <Text>
+                Linter is the entry tool that will help you be more
+                productive. So it make sense to add it to your project
+                as soon as possible. Isnt Prettier good enough? Maybe,
+                Prettier doesnt allow to configure rules as eslint
+                allows, so if you like prettier it is a good tool, but
+                maybe it make sense to rethink, how much prettier
+                actually helps you. And remember that spending 1-2 days
+                on settuping eslint with really rules that make sense to
+                you will be saving each person in team some time every day.
+                Maybe it worth.
+            </Text>
         </Layout>
     )
 }
