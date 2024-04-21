@@ -160,7 +160,9 @@ const SetupLinter: React.FC<PageProps> = () => {
                     eslint to prepend and disable rule in each file and gradually remove
                     this comments.
                 </Text>
-                <Heading>
+                <Heading
+                    size="m"
+                >
                     How linter can make you more productive?
                 </Heading>
                 <Text>
@@ -178,7 +180,9 @@ const SetupLinter: React.FC<PageProps> = () => {
                     nice tooling in you dev env linter will play a role of an assistant 
                     who is cleaning your kitchen after or while you were cooking.
                 </Text>
-                <Heading>
+                <Heading
+                    size="m"
+                >
                     What your linter file consists from
                 </Heading>
                 <Text>
@@ -253,7 +257,9 @@ const SetupLinter: React.FC<PageProps> = () => {
                         ]}
                     />
                 </CodeSection>
-                <Heading>
+                <Heading
+                    size="s"
+                >
                     Example of rules that I like and why I think they make sense
                 </Heading>
                 <CodeSection>
@@ -281,18 +287,7 @@ const SetupLinter: React.FC<PageProps> = () => {
                 <Text>
                     Long lines just hard to read, so make it better for everyone.
                 </Text>
-                <CodeSection>
-                    <CodeBlock
-                        key="comma-dangle"
-                        lines={[
-                            [0, '\'@stylistic/js/comma-dangle\':',],
-                            [1, '- error',],
-                            [1, '- always',],
-                        ]}
-                    />
-                </CodeSection>
-                <Text>
-                </Text>
+                <Divider />
                 <CodeSection>
                     <CodeBlock
                         key="new-line-rules"
@@ -319,6 +314,7 @@ const SetupLinter: React.FC<PageProps> = () => {
                     This makes working with codebase more productive, small git diffs,
                     less chance of merge conflicts.
                 </Text>
+                <Divider />
                 <CodeSection>
                     <CodeBlock
                         key="sorting-props-rule"
@@ -344,6 +340,7 @@ const SetupLinter: React.FC<PageProps> = () => {
                     way. So it saves time for whole team and follows
                     the practice only relevant changes in pr.
                 </Text>
+                <Divider />
             </VStack>
             <Heading>
                 Summary
@@ -359,6 +356,10 @@ const SetupLinter: React.FC<PageProps> = () => {
                 on settuping eslint with really rules that make sense to
                 you will be saving each person in team some time every day.
                 Maybe it worth.
+            </Text>
+            <Text>
+                This is the first article from the series of articles that
+                Im planing to make about evolving legacy apps.
             </Text>
         </Layout>
     )
