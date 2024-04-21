@@ -12,7 +12,9 @@ const Linter: React.FC<PageProps> = ({
     location,
 },) => {
     return (
-        <Layout>
+        <Layout
+            noSubscribe
+        >
             <Heading>
                 Legacy App
             </Heading>

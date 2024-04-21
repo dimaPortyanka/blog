@@ -10,6 +10,7 @@ const IndexPage: React.FC<PageProps> = () => {
     return (
         <Layout
             noDisclaimer
+            noSubscribe
         >
             <CV />
         </Layout>
