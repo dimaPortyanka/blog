@@ -100,7 +100,11 @@ const CV: React.FC = () => {
                     Education:
                 </Heading>
                 <Text>
-                    Dnipropetrovsk State University, Computer science, Master Degree, 2011-2016
+                    Dnipropetrovsk State University,
+                    <br />
+                    Computer science, 
+                    <br />
+                    Master Degree, 2011-2017
                 </Text>
             </Box>
         </Stack>
