@@ -4,8 +4,10 @@ import {
     Flex, 
     Heading,
     Link, 
-    Stack, 
+    ListItem, 
+    Stack,
     Text, 
+    UnorderedList, 
 } from '@chakra-ui/react'
 import {
     CalendarIcon, 
@@ -106,6 +108,18 @@ const CV: React.FC = () => {
                     <br />
                     Master Degree, 2011-2017
                 </Text>
+            </Box>
+            <Box>
+                <Heading>Articles</Heading>
+                <UnorderedList>
+                    <ListItem>
+                        <Link
+                            href="/legacy-app-steps/setup-linter/"
+                        >
+                            Evolving legacy app, First steps, Linter
+                        </Link>
+                    </ListItem>
+                </UnorderedList>
             </Box>
         </Stack>
     )
