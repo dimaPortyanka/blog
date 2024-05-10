@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {
     Heading,
+    Stack,
 } from '@chakra-ui/react'
 import {
     Link, PageProps, 
@@ -11,17 +12,22 @@ const Linter: React.FC<PageProps> = ({
     location,
 },) => {
     return (
-        <Layout
-            noSubscribe
-        >
+        <Layout>
             <Heading>
                 Legacy App
             </Heading>
-            <Link
-                to={`${location.pathname}setup-linter`}
-            >
-                Part 1: Linter
-            </Link>
+            <Stack>
+                <Link
+                    to={`${location.pathname}setup-linter`}
+                >
+                    Part 1: Linter
+                </Link>
+                <Link
+                    to={`${location.pathname}testing`}
+                >
+                    Part 2: Testing
+                </Link>
+            </Stack>
         </Layout>
     )
 }
