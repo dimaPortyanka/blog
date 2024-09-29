@@ -367,4 +367,4 @@ const SetupLinter: React.FC<PageProps> = () => {
 
 export default SetupLinter
 
-export const Head: HeadFC = () => <title>Stories of the drunken sailor</title>
+export const Head: HeadFC = () => <title>Setup linter</title>

@@ -1,5 +1,6 @@
 import * as React from 'react'
-import {
+import type {
+    HeadFC,
     PageProps, 
 } from 'gatsby'
 import {
@@ -86,3 +87,5 @@ const Testing: React.FC<PageProps> = () => {
 }
 
 export default Testing
+
+export const Head: HeadFC = () => <title>E2E over unit testing</title>
