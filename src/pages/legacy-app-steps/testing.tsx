@@ -46,6 +46,9 @@ const Testing: React.FC<PageProps> = () => {
                     if we explain very briefly unit tests are tests of small units of codebase.
                     As an example it can be a test of utility function
                     or specific component.
+                    Unit test will check if after sending specific arguments we are getting correct respsonse.
+                    In practice we might also check what other function were called.
+                    And this mean we really care about implementation of this function.
                 </Text>
                 <Heading
                     size="m"
@@ -58,7 +61,24 @@ const Testing: React.FC<PageProps> = () => {
                     You might have broken some unit test by refactoring 
                     functionality of some function
                     and moving this logic to another function, but for user nothing has changed.
-                    So this is the difference.
+                    So unit tests might slow down refactoring of the application and doesnt bring much benefits.
+                </Text>
+                <Heading size="m">
+                    How to write E2E tests
+                </Heading>
+                <Text>
+                    When you are writing E2E test first thing that you think should be how consistant and reliable my tests will be.
+                    So one test shouldnt interfer with other and one test suite run shouldnt depend from another.
+                    But you need to start getting benefits already now, without making changing to CI or introducing some seeding mechanism.
+                    So quick answer use already existing data and dont modify or if you modify data in this test run revert them back.
+                    Either on success or failure, something like afer, or afterEach.
+                </Text>
+                <Text>
+                    First set of E2E tests should be simple, cover critical path of your application and regions that you want to refactor
+                    without editing data but rather just make sure everything interactable and visible. 
+                </Text>
+                <Text>
+                    This small subset of E2E tests is easy to write and will bring you a lot of benefits.
                 </Text>
             </VStack>
         </Layout>

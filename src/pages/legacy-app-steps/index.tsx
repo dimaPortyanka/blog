@@ -8,9 +8,7 @@ import {
 } from 'gatsby'
 import Layout from 'src/components/Layout'
 
-const Linter: React.FC<PageProps> = ({
-    location,
-},) => {
+const Linter: React.FC<PageProps> = () => {
     return (
         <Layout>
             <Heading>
@@ -18,12 +16,12 @@ const Linter: React.FC<PageProps> = ({
             </Heading>
             <Stack>
                 <Link
-                    to={`${location.pathname}setup-linter`}
+                    to="./setup-linter"
                 >
                     Part 1: Linter
                 </Link>
                 <Link
-                    to={`${location.pathname}testing`}
+                    to="./testing"
                 >
                     Part 2: Testing
                 </Link>
