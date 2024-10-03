@@ -28,7 +28,7 @@ import vimiumExample from './assets/vimium_examp.png'
 import dasbob from './assets/dasbob.webp'
 import kinesis from './assets/kinesis.webp'
 import ergodox from './assets/ergodox.webp'
-import fzfHistory from './assets/fzf_history.jgp'
+import fzfHistory from './assets/fzf_history.jpg'
 
 const POST_LINK = 'https://githttps://dmytro-portianka.xyz/setuphub.com/kovidgoyal/kitty/issues/391'
 

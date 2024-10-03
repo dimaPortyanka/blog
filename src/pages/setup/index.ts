@@ -1,3 +1,1 @@
-export {
-    default, 
-} from './setup'
+export * from './setup'
