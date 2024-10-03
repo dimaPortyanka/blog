@@ -1,8 +1,4 @@
 import * as React from 'react'
-import type {
-    HeadFC, 
-    PageProps, 
-} from 'gatsby'
 import {
     Center,
     Code,
@@ -47,7 +43,7 @@ const TOOLS = [
     ],
 ]
 
-const MySetup: React.FC<PageProps> = () => {
+const MySetup = () => {
     return (
         <Layout>
             <Heading
@@ -343,4 +339,3 @@ const MySetup: React.FC<PageProps> = () => {
 
 export default MySetup
 
-export const Head: HeadFC = () => <title>My setup</title>
