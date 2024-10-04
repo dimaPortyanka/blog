@@ -220,47 +220,61 @@ const MySetup = () => {
                 So I checked a lot of options, I was thinking about kinesis, but it seemd
                 to bulky for me and it also looked quite outdated to me
                 (sorry to kinessis fans)
-                <Image
-                    alt="kinesis" src={kinesis}
-                />
+                <Center>
+                    <Image
+                        alt="kinesis"
+                        src={kinesis} width="200px"
+                    />
+                </Center>
                 and instead of it i've ordered ergodox ez. 
-                <Image
-                    alt="ergodox" src={ergodox}
-                />
+                <Center>
+                    <Image
+                        alt="ergodox"
+                        src={ergodox} width="200px"
+                    />
+                </Center>
                 Which was amazing, it had cool
                 online editor to remap keys, ability to emulate mouse from keyboard,
                 also it had glowing keys. 
                 <br />
-                So it looked cool and easy to start with the same time.
-                I used it for couple of years and dont regret how much i spent on it. 
+                So it looked cool and same time easy to start.
+                I used it for couple of years and dont regret how much i spent for it. 
                 <br />
                 But still I've been using vscode that required mouse. 
-                So I decided to switch to VIM honestly swith to VIM wasnt a big 
-                issue for me after I get used to the keyboard.
-                I want to say that decision to switch to VIM was inspired a lot by
-                some colleague that I worked with many years ago, he was using it daily
-                while I was using VSCode. At that time I couldnt understand why he was
+                <br />
+                So I decided to switch to <Code>VIM</Code> honestly 
+                swith to <Code>VIM</Code> wasnt a big issue for me after 
+                I get used to the keyboard.
+                I want to say that decision to switch to <Code>VIM</Code> was 
+                inspired a lot by some colleague that I worked with many years ago, 
+                he was using it daily while I was using VSCode. 
+                At that time I couldnt understand why he was
                 so excited about terminal applications like <Code>fzf</Code>.
                 Which he enforced me to start using, thank you my friend :) 
                 I belive that actually influenced me a lot, not imidiatly but
                 through the time.
                 That switch slow down me but hasnt give me much negative impact while
                 I was learning.
+                <br />
                 Firstly because I was working with the same tech stack for many years, 
                 also when i was doing this switch I was working with known codebase.
                 Where I really needed only ability to switch between files fast.
                 Also before it i setup precommit hooks and nice CI.
                 I wasnt afraid to actually break something. 
                 So to make daily work I didnt need much help from editor,
-                and i was tweaking my VIM just step by step.
+                and i was tweaking my <Code>VIM</Code> just step by step.
                 <br />
                 The only big issue that i had was browsing internet, 
-                but as VIM motion was something that i already get 
-                used to I just installed Vimium chrome extension that
-                alowed me to navigate internet without mouse with easy and blazingly fast.
-                <Image
-                    alt="Example of vimium usage" src={vimiumExample}
-                />
+                but as <Code>VIM</Code> motion was something that 
+                i already get used to I just installed Vimium 
+                chrome extension that alowed me to navigate 
+                internet without mouse with easy and blazingly fast.
+                <Center>
+                    <Image
+                        alt="Example of vimium usage"
+                        src={vimiumExample} width="400px"
+                    />
+                </Center>
                 <br />
                 I started using tmux mostly for tabs and being able to acces them 
                 from keyboard.
@@ -297,9 +311,13 @@ const MySetup = () => {
                     This tool is ireplacable for me.
                     It makes usage of terminal so smooth and nice
                     for me.
-                    <Image
-                        alt="example of history search" src={fzfHistory}
-                    />
+                    <Center>
+                        <Image
+                            alt="example of history search"
+                            src={fzfHistory} 
+                            width="400px"
+                        />
+                    </Center>
                     Most usefull for me is history search,
                     as it allows me to find something that i already used.
                 </p>
@@ -332,6 +350,26 @@ const MySetup = () => {
                     I 3d printed custom case for it, but maybe I'll swich to a
                     new keyboard soon. Something handwired and ultra ergonomic.
                 </p>
+            </Text>
+            <Heading
+                size="xl"
+            >
+                Summary
+            </Heading>
+            <Text>
+                All these steps helped me not only removed pain in my 
+                shoulder and wrists, 
+                but also it keeps me pasionate about my work
+                even when i have bad days i just want to work to be
+                able to use my keyboard or tweak a bit vim or bash/zsh/fish
+                to improve some tasks.
+                Also it gave me a kick to learn some things that I
+                wasnt thinking before.
+                Im learning about IoT device to be able create 
+                keyboard of my dream, I learned 3d modeling to
+                be able create case for my keyboard.
+                Im trying constatnly improve my setup and
+                also myself.
             </Text>
         </Layout>
     )
