@@ -119,6 +119,20 @@ const CV: React.FC = () => {
                             Evolving legacy app, First steps, Linter
                         </Link>
                     </ListItem>
+                    <ListItem>
+                        <Link
+                            href="/legacy-app-steps/testing/"
+                        >
+                            Evolving legacy app, Second step, Testing
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link
+                            href="/setup"
+                        >
+                            My productivity setup
+                        </Link>
+                    </ListItem>
                 </UnorderedList>
             </Box>
         </Stack>
