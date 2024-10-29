@@ -1,21 +1,22 @@
 import * as React from 'react'
 import type {
-    HeadFC, PageProps, 
+    HeadFC, 
+    PageProps, 
 } from 'gatsby'
 
-import CV from 'src/components/CV'
 import Layout from 'src/components/Layout'
+import Me from 'src/components/Me'
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <Layout
             noDisclaimer
         >
-            <CV />
+            <Me />
         </Layout>
     )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Dmytro Portianka - CV</title>
+export const Head: HeadFC = () => <title>Dmytro Portianka</title>
