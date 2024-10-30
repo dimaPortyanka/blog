@@ -12,6 +12,7 @@ import {
     Heading,
     Image,
     Text,
+    Link as ViewLink,
 } from '@chakra-ui/react'
 
 import saltoImage from './images/jumping.gif'
@@ -30,6 +31,9 @@ import sriLanka from './images/sri_lanka.jpg'
 import accelerator from './images/accelerator.jpg'
 import adamsPeek from './images/adams_peek.jpg'
 import thalwil from './images/thalwil.jpg'
+import {
+    Link, 
+} from 'gatsby'
 
 const FUN_PROJECTS: {thumbnail: string, body: string}[] = [{
     thumbnail: delphi7,
@@ -139,6 +143,32 @@ const Me = () => {
                     src={saltoImage}
                 />
             </Flex>
+            <Box>
+                <Heading
+                    size="xs"
+                >My articles:</Heading>
+                <ViewLink>
+                    <Link
+                        title="my setup" to="/setup"
+                    >my setup</Link>
+                </ViewLink>
+                {' * '}
+                <ViewLink>
+                    <Link 
+                        to="/legacy-app-steps/setup-linter" 
+                    >
+                        evolve legacy step 1: setup linter
+                    </Link>
+                </ViewLink>
+                {' * '}
+                <ViewLink>
+                    <Link 
+                        to="/legacy-app-steps/testing" 
+                    >
+                        evolve legacy step 2: testing strategy 
+                    </Link>
+                </ViewLink>
+            </Box>
             <Flex
                 direction="column"
             >
@@ -152,6 +182,7 @@ const Me = () => {
                     gridTemplateColumns={{
                         base: 'repeat(1, 1fr)',
                         sm: 'repeat(2, 1fr)',
+                        md: 'repeat(3, 1fr)',
                     }}
                 >
                     {FUN_PROJECTS.map(({
