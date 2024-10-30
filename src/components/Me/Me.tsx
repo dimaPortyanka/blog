@@ -102,7 +102,14 @@ const Me = () => {
             direction="column" gap="2rem"
         >
             <Flex
-                alignItems="center"
+                alignItems={{
+                    base: 'left',
+                    sm: 'center',
+                }}
+                direction={{
+                    base: 'column',
+                    sm: 'row',
+                }}
             >
                 <Box>
                     <Heading
@@ -124,12 +131,15 @@ const Me = () => {
                     </Text>
                 </Box>
                 <Image
-                    height="20rem" src={saltoImage}
+                    fit="cover"
+                    height={{
+                        base: '25rem',
+                        sm: '15rem',
+                    }}
+                    src={saltoImage}
                 />
             </Flex>
-            <Flex
-                direction="column"
-            >
+            <Flex>
                 <Heading
                     size="sm"
                 >
@@ -137,7 +147,10 @@ const Me = () => {
                 </Heading>
                 <Grid
                     gap="1rem"
-                    gridTemplateColumns="repeat(3, 1fr);"
+                    gridTemplateColumns={{
+                        base: 'repeat(1, 1fr)',
+                        sm: 'repeat(2, 1fr)',
+                    }}
                 >
                     {FUN_PROJECTS.map(({
                         thumbnail, body,
@@ -167,9 +180,16 @@ const Me = () => {
                 <Heading>
                     I love any activity that can take my breath
                 </Heading>
-                <Flex>
+                <Flex
+                    direction={{
+                        base: 'column',
+                        md: 'row',
+                    }}
+                >
                     <Box
-                        background="lightyellow" flex="1" padding="0.5rem"
+                        background="lightyellow" 
+                        flex="1" 
+                        padding="0.5rem"
                     >
                         <Heading
                             size="sm"
@@ -198,7 +218,9 @@ const Me = () => {
                         />
                     </Box>
                     <Box
-                        background="lightblue" flex="1" padding="0.5rem"
+                        background="lightblue" 
+                        flex="1" 
+                        padding="0.5rem"
                     >
                         <Heading
                             size="sm"
