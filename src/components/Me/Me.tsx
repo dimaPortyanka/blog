@@ -114,6 +114,10 @@ const Me = () => {
                     base: 'column',
                     sm: 'row',
                 }}
+                gap={{
+                    base: '0',
+                    sm: '1rem',
+                }}
             >
                 <Box>
                     <Heading
