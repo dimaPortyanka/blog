@@ -139,7 +139,9 @@ const Me = () => {
                     src={saltoImage}
                 />
             </Flex>
-            <Flex>
+            <Flex
+                direction="column"
+            >
                 <Heading
                     size="sm"
                 >
