@@ -18,13 +18,6 @@ const config: GatsbyConfig = {
                 portalZIndex: undefined,
             },
         },
-        {
-            resolve: 'gatsby-plugin-mailchimp',
-            options: {
-                endpoint: 'https://xyz.us22.list-manage.com/subscribe/post?u=415f2a300ea7e56784ff3a934&amp;id=a03f82efda&amp;f_id=00f8c4e1f0',
-                timeout: 3500,
-            },
-        },
     ], 
 }
 
