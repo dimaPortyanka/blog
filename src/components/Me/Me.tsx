@@ -14,6 +14,18 @@ import {
     Text,
     Link as ViewLink,
 } from '@chakra-ui/react'
+import {
+    FaCalendar as CalendarIcon, 
+} from '@react-icons/all-files/fa/FaCalendar'
+import {
+    FaEnvelope as EnvelopeIcon, 
+} from '@react-icons/all-files/fa/FaEnvelope'
+import {
+    FaLinkedin as LinkedInIcon, 
+} from '@react-icons/all-files/fa/FaLinkedin'
+import {
+    FaTelegram as TelegramIcon, 
+} from '@react-icons/all-files/fa/FaTelegram'
 
 import saltoImage from './images/jumping.gif'
 import snake1ScreenShot from './images/snake_1_screenshot.png'
@@ -119,25 +131,71 @@ const Me = () => {
                     sm: '1rem',
                 }}
             >
-                <Box>
-                    <Heading
-                        paddingY="2rem"
+                <Flex
+                    direction="column" gap="2rem"
+                >
+                    <Box>
+                        <Heading
+                            paddingY="2rem"
+                        >
+                            Hi there!
+                        </Heading>
+                        <Heading
+                            size="xs"
+                        >
+                            My name is Dmytro and this is my less formal description of who I am.
+                        </Heading>
+                        <Text>
+                            I'm software engineer and Im happy to say that this is my profession
+                            and also my favourite hobby. 
+                            I feel happy everytime im writing something cool. 
+                            And Im doing it professionally since 2014 and started
+                            doing coding since high school 2010.
+                        </Text>
+                    </Box>
+                    <Flex
+                        gap="2rem" justifyItems="center"
                     >
-                        Hi there!
-                    </Heading>
-                    <Heading
-                        size="xs"
-                    >
-                        My name is Dmytro and this is my less formal description of who I am.
-                    </Heading>
-                    <Text>
-                        I'm software engineer and Im happy to say that this is my profession
-                        and also my favourite hobby. 
-                        I feel happy everytime im writing something cool. 
-                        And Im doing it professionally since 2014 and started
-                        doing coding since high school 2010.
-                    </Text>
-                </Box>
+                        <ViewLink
+                            as={Link} target="_blank" to="https://calendly.com/portyanka-d/15min"
+                        >
+                            <CalendarIcon
+                                style={{
+                                    display: 'inline', 
+                                }}
+                            /> book call
+                        </ViewLink>
+                        <ViewLink
+                            as={Link} target="_blank" to="mailto:portianka.d@gmail.com"
+                        >
+                            <EnvelopeIcon
+                                style={{
+                                    display: 'inline', 
+                                }}
+                            /> portianka.d@gmail.com
+                        </ViewLink>
+                        <ViewLink
+                            as={Link} 
+                            target="_blank" 
+                            to="https://www.linkedin.com/in/dmytro-portianka-46221299/"
+                        >
+                            <LinkedInIcon
+                                style={{
+                                    display: 'inline', 
+                                }}
+                            /> LinkedIn
+                        </ViewLink>
+                        <ViewLink
+                            as={Link} target="_blank" to="https://t.me/dmytro_portianka"
+                        >
+                            <TelegramIcon
+                                style={{
+                                    display: 'inline', 
+                                }}
+                            /> @dmytro_portianka
+                        </ViewLink>
+                    </Flex>
+                </Flex>
                 <Image
                     fit="cover"
                     height={{
@@ -151,26 +209,22 @@ const Me = () => {
                 <Heading
                     size="xs"
                 >My articles:</Heading>
-                <ViewLink>
-                    <Link
-                        title="my setup" to="/setup"
-                    >my setup</Link>
+                <ViewLink
+                    as={Link} title="my setup" to="/setup"
+                >
+                    my setup
                 </ViewLink>
                 {' * '}
-                <ViewLink>
-                    <Link 
-                        to="/legacy-app-steps/setup-linter" 
-                    >
-                        evolve legacy step 1: setup linter
-                    </Link>
+                <ViewLink
+                    as={Link} to="/legacy-app-steps/setup-linter"
+                >
+                    evolve legacy step 1: setup linter
                 </ViewLink>
                 {' * '}
-                <ViewLink>
-                    <Link 
-                        to="/legacy-app-steps/testing" 
-                    >
-                        evolve legacy step 2: testing strategy 
-                    </Link>
+                <ViewLink
+                    as={Link} to="/legacy-app-steps/testing"
+                >
+                    evolve legacy step 2: testing strategy 
                 </ViewLink>
             </Box>
             <Flex
