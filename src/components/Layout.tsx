@@ -4,6 +4,7 @@ import {
     Container,
     VStack,
 } from '@chakra-ui/react'
+import desk from './images/desk.jpg'
 
 import Intro from '../components/Intro'
 
@@ -18,20 +19,25 @@ const Layout: React.FC<LayoutProps> = ({
 },) => {
     return (
         <VStack
-            bg="Background" 
+            background={`url("${desk}")`} 
+            backgroundAttachment="fixed"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            bg="Background"
             minH="100vh"
         >
-            <Box
-                bg="InfoBackground"
-                py={2}
-                textColor="InfoText"
-                width="100%"
-            >
-                {!noDisclaimer && (
+            {!noDisclaimer && (
+                <Box
+                    bg="InfoBackground"
+                    py={2}
+                    textColor="InfoText"
+                    width="100%"
+                >
                     <Intro />
-                )}
-            </Box>
+                </Box>
+            )}
             <Container
+                background={'rgba(255,255,255,0.8)'}
                 maxW="4xl"
             >
                 {children}

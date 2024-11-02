@@ -43,6 +43,7 @@ import sriLanka from './images/sri_lanka.jpg'
 import accelerator from './images/accelerator.jpg'
 import adamsPeek from './images/adams_peek.jpg'
 import thalwil from './images/thalwil.jpg'
+
 import {
     Link, 
 } from 'gatsby'
