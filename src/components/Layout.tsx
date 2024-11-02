@@ -23,7 +23,6 @@ const Layout: React.FC<LayoutProps> = ({
             backgroundAttachment="fixed"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
-            bg="Background"
             minH="100vh"
         >
             {!noDisclaimer && (
