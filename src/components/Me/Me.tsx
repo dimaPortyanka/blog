@@ -155,7 +155,9 @@ const Me = () => {
                         </Text>
                     </Box>
                     <Flex
-                        gap="2rem" justifyContent="center"
+                        flexWrap="wrap" gap="2rem"
+                        justifyContent="center"
+                        maxW="100%"
                     >
                         <ViewLink
                             as={Link} target="_blank" to="https://calendly.com/portyanka-d/15min"
