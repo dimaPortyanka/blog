@@ -37,10 +37,7 @@ const Layout: React.FC<LayoutProps> = ({
             )}
             <Container
                 background={'rgba(255,255,255,0.8)'}
-                marginBottom="2rem"
-                marginTop="2rem"
                 maxW="4xl"
-                paddingBottom="2rem"
             >
                 {children}
             </Container>
